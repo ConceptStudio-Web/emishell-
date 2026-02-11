@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Emishell Boutique</title>
+    <meta name="description" content="Get in touch with Emishell Boutique. We're here to help with your fashion needs.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: '#fd01a4',
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-white">
+
+    <!-- Marquee Banner -->
+    <div class="marquee-banner">
+        <div class="marquee-content">
+            <span>Limited Time Offer</span>
+            <span>Free Shipping on Orders Over $50</span>
+            <span>New Arrivals Daily</span>
+            <span>Limited Time Offer</span>
+            <span>Free Shipping on Orders Over $50</span>
+            <span>New Arrivals Daily</span>
+            <span>Limited Time Offer</span>
+            <span>Free Shipping on Orders Over $50</span>
+            <span>New Arrivals Daily</span>
+            <span>Limited Time Offer</span>
+            <span>Free Shipping on Orders Over $50</span>
+            <span>New Arrivals Daily</span>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header
+        class="fixed top-[42px] w-full z-50 transition-all duration-500 bg-white/95 backdrop-blur-md py-4 shadow-sm">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <a href="index.html" class="group">
+                <img src="Emishell logo.png" alt="EMISHELL"
+                    class="h-12 w-auto group-hover:scale-105 transition-transform duration-300">
+            </a>
+
+            <nav class="hidden lg:flex items-center gap-8">
+                <a href="index.html"
+                    class="text-xs font-bold tracking-[0.15em] uppercase transition-all relative group text-slate-600 hover:text-brand">
+                    Home
+                    <span
+                        class="absolute -bottom-1 left-0 h-[2px] bg-brand w-0 group-hover:w-full transition-all duration-300"></span>
+                </a>
+                <a href="shop.html"
+                    class="text-xs font-bold tracking-[0.15em] uppercase transition-all relative group text-slate-600 hover:text-brand">
+                    Shop
+                    <span
+                        class="absolute -bottom-1 left-0 h-[2px] bg-brand w-0 group-hover:w-full transition-all duration-300"></span>
+                </a>
+                <a href="women.html"
+                    class="text-xs font-bold tracking-[0.15em] uppercase transition-all relative group text-slate-600 hover:text-brand">
+                    Women
+                    <span
+                        class="absolute -bottom-1 left-0 h-[2px] bg-brand w-0 group-hover:w-full transition-all duration-300"></span>
+                </a>
+                <a href="men.html"
+                    class="text-xs font-bold tracking-[0.15em] uppercase transition-all relative group text-slate-600 hover:text-brand">
+                    Men
+                    <span
+                        class="absolute -bottom-1 left-0 h-[2px] bg-brand w-0 group-hover:w-full transition-all duration-300"></span>
+                </a>
+                <a href="kids.html"
+                    class="text-xs font-bold tracking-[0.15em] uppercase transition-all relative group text-slate-600 hover:text-brand">
+                    Kids
+                    <span
+                        class="absolute -bottom-1 left-0 h-[2px] bg-brand w-0 group-hover:w-full transition-all duration-300"></span>
+                </a>
+                <a href="about.html"
+                    class="text-xs font-bold tracking-[0.15em] uppercase transition-all relative group text-slate-600 hover:text-brand">
+                    About
+                    <span
+                        class="absolute -bottom-1 left-0 h-[2px] bg-brand w-0 group-hover:w-full transition-all duration-300"></span>
+                </a>
+                <a href="accessories.html"
+                    class="text-xs font-bold tracking-[0.15em] uppercase transition-all relative group text-slate-600 hover:text-brand">
+                    Accessories
+                    <span
+                        class="absolute -bottom-1 left-0 h-[2px] bg-brand w-0 group-hover:w-full transition-all duration-300"></span>
+                </a>
+                <a href="contact.html"
+                    class="text-xs font-bold tracking-[0.15em] uppercase transition-all relative group text-brand">
+                    Contact
+                    <span class="absolute -bottom-1 left-0 h-[2px] bg-brand w-full"></span>
+                </a>
+            </nav>
+
+            <div class="flex items-center gap-5">
+                <!-- Search -->
+                <button class="text-slate-600 hover:text-brand transition-colors p-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8" />
+                        <path d="m21 21-4.3-4.3" />
+                    </svg>
+                </button>
+                <!-- Wishlist -->
+                <a href="wishlist.html" class="text-slate-600 hover:text-brand transition-colors relative">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path
+                            d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
+                    </svg>
+                    <span
+                        class="wishlist-count absolute -top-2 -right-2 bg-brand text-white text-[10px] w-4 h-4 rounded-full flex items-center justify-center font-bold"
+                        style="display: none;">0</span>
+                </a>
+                <!-- Mobile Menu -->
+                <button id="open-mobile-menu" class="lg:hidden text-slate-900 p-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="4" x2="20" y1="12" y2="12" />
+                        <line x1="4" x2="20" y1="6" y2="6" />
+                        <line x1="4" x2="20" y1="18" y2="18" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu Drawer -->
+    <div id="mobile-menu-overlay"
+        class="fixed inset-0 z-[100] hidden bg-slate-900/40 backdrop-blur-sm opacity-0 transition-opacity duration-300">
+        <div id="mobile-menu-drawer"
+            class="absolute right-0 top-0 h-full w-4/5 max-w-sm bg-white shadow-2xl translate-x-full transition-transform duration-500 flex flex-col">
+            <div class="p-8 flex justify-between items-center border-b border-slate-100">
+                <img src="Emishell logo.png" alt="EMISHELL" class="h-10 w-auto">
+                <button id="close-mobile-menu" class="p-2 hover:bg-slate-50 rounded-full transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M18 6 6 18" />
+                        <path d="m6 6 12 12" />
+                    </svg>
+                </button>
+            </div>
+            <nav class="flex-1 p-8 space-y-5">
+                <a href="index.html"
+                    class="block text-xl font-bold text-slate-900 hover:text-brand transition-colors">Home</a>
+                <a href="shop.html"
+                    class="block text-xl font-bold text-slate-900 hover:text-brand transition-colors">Shop</a>
+                <a href="women.html"
+                    class="block text-xl font-bold text-slate-900 hover:text-brand transition-colors">Women</a>
+                <a href="men.html"
+                    class="block text-xl font-bold text-slate-900 hover:text-brand transition-colors">Men</a>
+                <a href="kids.html"
+                    class="block text-xl font-bold text-slate-900 hover:text-brand transition-colors">Kids</a>
+                <a href="about.html"
+                    class="block text-xl font-bold text-slate-900 hover:text-brand transition-colors">About</a>
+                <a href="accessories.html"
+                    class="block text-xl font-bold text-slate-900 hover:text-brand transition-colors">Accessories</a>
+                <a href="contact.html" class="block text-xl font-bold text-brand transition-colors">Contact</a>
+                <a href="wishlist.html"
+                    class="block text-xl font-bold text-slate-900 hover:text-brand transition-colors">Wishlist</a>
+            </nav>
+            <div class="p-8 border-t border-slate-100 space-y-4">
+                <p class="text-xs font-bold text-slate-400 uppercase tracking-widest">Connect with us</p>
+                <div class="flex gap-4">
+                    <a href="#"
+                        class="w-10 h-10 bg-slate-100 rounded-full flex items-center justify-center text-slate-500 hover:bg-brand hover:text-white transition-all">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                            <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+                        </svg>
+                    </a>
+                    <a href="#"
+                        class="w-10 h-10 bg-slate-100 rounded-full flex items-center justify-center text-slate-500 hover:bg-brand hover:text-white transition-all">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="relative pt-48 pb-24 overflow-hidden bg-slate-50">
+        <div
+            class="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-pink-50/50 to-transparent pointer-events-none">
+        </div>
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="max-w-3xl">
+                <span
+                    class="inline-block px-4 py-2 rounded-full bg-brand/5 text-brand text-xs font-bold tracking-widest uppercase mb-6">Connect
+                    With Us</span>
+                <h1 class="text-6xl md:text-7xl font-serif font-black text-slate-900 mb-8 leading-tight">
+                    We'd Love to <br><span class="text-brand">Hear From You</span>
+                </h1>
+                <p class="text-lg text-slate-500 max-w-xl leading-relaxed">
+                    Have a question about our collections or need fashion advice? Our team in Bulawayo is here to
+                    provide you with an exceptional boutique experience.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Grid -->
+    <section class="py-24 relative">
+        <div class="container mx-auto px-6">
+            <div class="grid lg:grid-cols-12 gap-16">
+                <!-- Info Column -->
+                <div class="lg:col-span-5 space-y-12">
+                    <div class="space-y-8">
+                        <h2 class="text-3xl font-serif font-bold text-slate-900">Visit Our Boutique</h2>
+
+                        <div class="grid gap-6">
+                            <!-- Location -->
+                            <div
+                                class="group p-8 rounded-[2.5rem] bg-white border border-slate-100 shadow-sm hover:shadow-xl hover:shadow-brand/5 transition-all duration-500">
+                                <div
+                                    class="w-14 h-14 rounded-2xl bg-slate-50 flex items-center justify-center text-slate-900 group-hover:bg-brand group-hover:text-white transition-colors duration-500 mb-6 font-bold shadow-inner">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                                        <circle cx="12" cy="10" r="3" />
+                                    </svg>
+                                </div>
+                                <h3 class="text-xl font-bold text-slate-900 mb-3 uppercase tracking-tighter">Boutique
+                                    Location</h3>
+                                <p class="text-slate-500 mb-4 leading-relaxed font-medium">
+                                    Shop 14, City Centre<br>
+                                    Main Street & 9th Ave<br>
+                                    Bulawayo, Zimbabwe
+                                </p>
+                                <a href="https://maps.google.com" target="_blank"
+                                    class="inline-flex items-center text-xs font-bold text-brand uppercase tracking-widest hover:gap-3 transition-all">Get
+                                    Directions <span class="ml-2">→</span></a>
+                            </div>
+
+                            <!-- Video Directions -->
+                            <div
+                                class="p-8 rounded-[2.5rem] bg-white border border-slate-100 shadow-sm overflow-hidden group hover:shadow-xl hover:shadow-brand/5 transition-all duration-500">
+                                <h3
+                                    class="text-xl font-bold text-slate-900 mb-6 uppercase tracking-tighter text-center">
+                                    Video Directions</h3>
+                                <div
+                                    class="relative rounded-3xl overflow-hidden bg-slate-100 aspect-[9/16] max-w-[280px] mx-auto shadow-inner border border-slate-50">
+                                    <video src="Assets/directions.mp4" class="w-full h-full object-cover" autoplay muted
+                                        loop playsinline controls></video>
+                                </div>
+                                <p
+                                    class="text-slate-400 text-[10px] text-center mt-4 font-bold uppercase tracking-widest">
+                                    Finding us is effortless</p>
+                            </div>
+
+                            <!-- Contact Detail Grid -->
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div
+                                    class="p-8 rounded-[2.5rem] bg-white border border-slate-100 shadow-sm hover:shadow-lg transition-all">
+                                    <div
+                                        class="w-12 h-12 rounded-xl bg-slate-50 flex items-center justify-center text-slate-900 mb-6">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round">
+                                            <path
+                                                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                                        </svg>
+                                    </div>
+                                    <h4 class="font-bold text-slate-900 mb-2 uppercase text-xs tracking-widest">Phone
+                                    </h4>
+                                    <p class="text-slate-500 text-sm font-medium">+263 77 285 7034</p>
+                                    <p class="text-slate-500 text-sm font-medium">WhatsApp Available</p>
+                                </div>
+                                <div
+                                    class="p-8 rounded-[2.5rem] bg-white border border-slate-100 shadow-sm hover:shadow-lg transition-all">
+                                    <div
+                                        class="w-12 h-12 rounded-xl bg-slate-50 flex items-center justify-center text-slate-900 mb-6">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round">
+                                            <rect width="20" height="16" x="2" y="4" rx="2" />
+                                            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                                        </svg>
+                                    </div>
+                                    <h4 class="font-bold text-slate-900 mb-2 uppercase text-xs tracking-widest">Email
+                                    </h4>
+                                    <p class="text-slate-500 text-sm font-medium">sales@emishell.co.zw</p>
+                                </div>
+                            </div>
+
+                            <!-- Hours -->
+                            <div class="p-8 rounded-[2.5rem] bg-slate-900 text-white shadow-xl">
+                                <h3 class="text-xl font-bold mb-6">Boutique Hours</h3>
+                                <div class="grid grid-cols-2 gap-y-4 text-sm font-medium">
+                                    <span class="text-slate-400">Mon - Fri</span>
+                                    <span class="text-right">08:30 - 17:30</span>
+                                    <span class="text-slate-400">Saturday</span>
+                                    <span class="text-right">09:00 - 15:00</span>
+                                    <span class="text-slate-400">Sunday</span>
+                                    <span class="text-right text-brand font-bold">Closed</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Form Column -->
+                <div class="lg:col-span-7">
+                    <div class="bg-white p-12 rounded-[3.5rem] border border-slate-100 shadow-2xl shadow-slate-200/50">
+                        <div class="mb-12 text-center lg:text-left">
+                            <h2 class="text-4xl font-serif font-bold text-slate-900 mb-4">Send a Message</h2>
+                            <p class="text-slate-500 font-medium">Fill out the form below and our stylist will contact
+                                you shortly.</p>
+                        </div>
+
+                        <form id="contact-form" class="space-y-8">
+                            <div class="grid md:grid-cols-2 gap-8">
+                                <div class="space-y-2">
+                                    <label
+                                        class="text-[10px] font-bold uppercase tracking-[0.2em] text-slate-400 px-2">First
+                                        Name</label>
+                                    <input type="text" required
+                                        class="w-full bg-slate-50 border-none rounded-2xl px-6 py-4 text-slate-900 focus:ring-2 focus:ring-brand/20 transition-all font-medium placeholder:text-slate-300"
+                                        placeholder="e.g. Nomalanga">
+                                </div>
+                                <div class="space-y-2">
+                                    <label
+                                        class="text-[10px] font-bold uppercase tracking-[0.2em] text-slate-400 px-2">Last
+                                        Name</label>
+                                    <input type="text" required
+                                        class="w-full bg-slate-50 border-none rounded-2xl px-6 py-4 text-slate-900 focus:ring-2 focus:ring-brand/20 transition-all font-medium placeholder:text-slate-300"
+                                        placeholder="e.g. Ndlovu">
+                                </div>
+                            </div>
+
+                            <div class="space-y-2">
+                                <label
+                                    class="text-[10px] font-bold uppercase tracking-[0.2em] text-slate-400 px-2">Email
+                                    Address</label>
+                                <input type="email" required
+                                    class="w-full bg-slate-50 border-none rounded-2xl px-6 py-4 text-slate-900 focus:ring-2 focus:ring-brand/20 transition-all font-medium placeholder:text-slate-300"
+                                    placeholder="yourname@example.com">
+                            </div>
+
+                            <div class="space-y-2">
+                                <label
+                                    class="text-[10px] font-bold uppercase tracking-[0.2em] text-slate-400 px-2">Subject</label>
+                                <select
+                                    class="w-full bg-slate-50 border-none rounded-2xl px-6 py-4 text-slate-900 focus:ring-2 focus:ring-brand/20 transition-all font-medium appearance-none">
+                                    <option>General Inquiry</option>
+                                    <option>Order Assistance</option>
+                                    <option>Appointment Booking</option>
+                                    <option>Feedback</option>
+                                </select>
+                            </div>
+
+                            <div class="space-y-2">
+                                <label class="text-[10px] font-bold uppercase tracking-[0.2em] text-slate-400 px-2">Your
+                                    Message</label>
+                                <textarea required rows="6"
+                                    class="w-full bg-slate-50 border-none rounded-[2rem] px-6 py-4 text-slate-900 focus:ring-2 focus:ring-brand/20 transition-all font-medium placeholder:text-slate-300 resize-none"
+                                    placeholder="How can we help you today?"></textarea>
+                            </div>
+
+                            <button type="submit"
+                                class="w-full bg-brand text-white py-6 rounded-2xl font-bold uppercase tracking-[0.3em] text-xs hover:bg-slate-900 transition-all duration-500 shadow-lg shadow-brand/20 hover:shadow-slate-900/20 translate-y-0 active:translate-y-1">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-24 bg-slate-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-xs font-bold text-brand uppercase tracking-widest mb-4 inline-block">Common
+                    Questions</span>
+                <h2 class="text-4xl font-serif font-bold text-slate-900">Boutique <span
+                        class="text-brand">Assistance</span></h2>
+            </div>
+
+            <div class="max-w-3xl mx-auto space-y-4">
+                <!-- FAQ Item 1 -->
+                <div
+                    class="faq-item group bg-white border border-slate-100 rounded-3xl overflow-hidden transition-all duration-500">
+                    <button class="w-full p-8 flex items-center justify-between text-left">
+                        <span class="text-lg font-bold text-slate-900 group-hover:text-brand transition-colors">Do you
+                            offer home deliveries in Bulawayo?</span>
+                        <div
+                            class="w-8 h-8 rounded-full bg-slate-50 flex items-center justify-center group-hover:bg-brand group-hover:text-white transition-all">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                stroke-linejoin="round" class="faq-icon transition-transform duration-300">
+                                <path d="m6 9 6 6 6-6" />
+                            </svg>
+                        </div>
+                    </button>
+                    <div class="faq-content overflow-hidden max-h-0 transition-all duration-500 ease-in-out">
+                        <div class="p-8 pt-0 text-slate-500 font-medium leading-relaxed">
+                            Yes! We offer free same-day delivery within the Bulawayo City Centre and suburbs for orders
+                            over $30.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div
+                    class="faq-item group bg-white border border-slate-100 rounded-3xl overflow-hidden transition-all duration-500">
+                    <button class="w-full p-8 flex items-center justify-between text-left">
+                        <span class="text-lg font-bold text-slate-900 group-hover:text-brand transition-colors">What is
+                            your exchange policy?</span>
+                        <div
+                            class="w-8 h-8 rounded-full bg-slate-50 flex items-center justify-center group-hover:bg-brand group-hover:text-white transition-all">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                stroke-linejoin="round" class="faq-icon transition-transform duration-300">
+                                <path d="m6 9 6 6 6-6" />
+                            </svg>
+                        </div>
+                    </button>
+                    <div class="faq-content overflow-hidden max-h-0 transition-all duration-500 ease-in-out">
+                        <div class="p-8 pt-0 text-slate-500 font-medium leading-relaxed">
+                            We accept exchanges within 48 hours for Boutique items, provided they are unworn and in
+                            their original packaging with the tag intact.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div
+                    class="faq-item group bg-white border border-slate-100 rounded-3xl overflow-hidden transition-all duration-500">
+                    <button class="w-full p-8 flex items-center justify-between text-left">
+                        <span class="text-lg font-bold text-slate-900 group-hover:text-brand transition-colors">Can I
+                            book a private styling session?</span>
+                        <div
+                            class="w-8 h-8 rounded-full bg-slate-50 flex items-center justify-center group-hover:bg-brand group-hover:text-white transition-all">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                stroke-linejoin="round" class="faq-icon transition-transform duration-300">
+                                <path d="m6 9 6 6 6-6" />
+                            </svg>
+                        </div>
+                    </button>
+                    <div class="faq-content overflow-hidden max-h-0 transition-all duration-500 ease-in-out">
+                        <div class="p-8 pt-0 text-slate-500 font-medium leading-relaxed">
+                            Absolutely. We offer exclusive 1-on-1 styling sessions at our Bulawayo boutique. Please use
+                            the contact form or call us to book your appointment.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-white pt-24 pb-12 overflow-hidden relative">
+        <div
+            class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-pink-300 via-rose-500 to-blue-300 opacity-50">
+        </div>
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="grid md:grid-cols-5 gap-16 mb-20 text-left">
+                <div class="col-span-1 space-y-8">
+                    <div>
+                        <img src="Emishell logo.png" alt="EMISHELL" class="h-16 w-auto mb-6">
+                    </div>
+                    <p class="text-slate-400 text-sm leading-relaxed max-w-xs font-medium">
+                        Curating timeless style and effortless elegance for the modern muse.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-brand transition-all text-white group"
+                            target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                            </svg>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-brand transition-all text-white"
+                            target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+                            </svg>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-brand transition-all text-white"
+                            target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path
+                                    d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-bold text-[10px] uppercase tracking-[0.3em] mb-8 text-slate-500">Shop</h4>
+                    <ul class="space-y-4 text-sm font-medium">
+                        <li><a href="women.html" class="text-slate-400 hover:text-pink-300 transition-colors">Women</a>
+                        </li>
+                        <li><a href="men.html" class="text-slate-400 hover:text-pink-300 transition-colors">Men</a></li>
+                        <li><a href="kids.html" class="text-slate-400 hover:text-pink-300 transition-colors">Kids</a>
+                        </li>
+                        <li><a href="accessories.html"
+                                class="text-slate-400 hover:text-pink-300 transition-colors">Accessories</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-[10px] uppercase tracking-[0.3em] mb-8 text-slate-500">Company</h4>
+                    <ul class="space-y-4 text-sm font-medium">
+                        <li><a href="about.html" class="text-slate-400 hover:text-blue-300 transition-colors">About
+                                Us</a></li>
+                        <li><a href="contact.html"
+                                class="text-slate-400 hover:text-blue-300 transition-colors">Contact</a></li>
+                        <li><a href="#" class="text-slate-400 hover:text-blue-300 transition-colors">Privacy Policy</a>
+                        </li>
+                        <li><a href="#" class="text-slate-400 hover:text-blue-300 transition-colors">Terms of
+                                Service</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-[10px] uppercase tracking-[0.3em] mb-8 text-slate-500">Need Help?</h4>
+                    <ul class="space-y-4">
+                        <li class="text-slate-400 text-sm">Call/WhatsApp:</li>
+                        <li><a href="https://wa.me/263772857034" target="_blank"
+                                class="text-lg font-bold text-brand">+263 77 285 7034</a></li>
+                        <li class="text-slate-400 text-sm mt-4">Email:</li>
+                        <li><a href="mailto:sales@emishell.co.zw"
+                                class="text-sm font-bold hover:text-brand transition-colors">sales@emishell.co.zw</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="glass-dark p-8 rounded-[2rem]">
+                    <h4 class="font-bold text-[10px] uppercase tracking-[0.3em] mb-6 text-slate-300">Newsletter</h4>
+                    <p class="text-slate-400 text-xs mb-6">Subscribe for exclusive updates.</p>
+                    <div class="relative">
+                        <input type="email" placeholder="Email"
+                            class="w-full bg-white/5 border border-white/10 rounded-2xl px-5 py-4 text-sm focus:outline-none focus:border-pink-300/50">
+                        <button
+                            class="absolute right-2 top-2 bottom-2 bg-pink-300 text-slate-900 px-4 rounded-xl hover:bg-white transition-all">→</button>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-white/5 pt-8 text-center">
+                <p class="text-[10px] font-bold uppercase tracking-[0.2em] text-slate-500">© 2024 EMISHELL BOUTIQUE. ALL
+                    RIGHTS RESERVED.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="quote-modal"></div>
+
+    <script src="data/products_data.js"></script>
+    <script src="script.js"></script>
+    <script>
+        // Contact form handling with premium notification
+        document.getElementById('contact-form').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            // Show success notification using logic from script.js
+            if (typeof showNotification === 'function') {
+                showNotification('Your message has been received! Our stylist will respond shortly.');
+            } else {
+                alert('Thank you! Your message has been sent.');
+            }
+
+            // Reset form with a slight delay for better UX
+            setTimeout(() => {
+                this.reset();
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }, 500);
+        });
+
+        // FAQ accordion functionality
+        document.querySelectorAll('.faq-item').forEach(item => {
+            const button = item.querySelector('button');
+            const content = item.querySelector('.faq-content');
+            const icon = item.querySelector('.faq-icon');
+
+            button.addEventListener('click', () => {
+                const isOpen = content.style.maxHeight && content.style.maxHeight !== '0px';
+
+                // Close all other items
+                document.querySelectorAll('.faq-content').forEach(c => c.style.maxHeight = '0px');
+                document.querySelectorAll('.faq-icon').forEach(i => i.style.transform = 'rotate(0deg)');
+                document.querySelectorAll('.faq-item').forEach(f => f.classList.remove('border-brand/30', 'shadow-lg', 'shadow-brand/5'));
+
+                if (!isOpen) {
+                    content.style.maxHeight = content.scrollHeight + 'px';
+                    icon.style.transform = 'rotate(180deg)';
+                    item.classList.add('border-brand/30', 'shadow-lg', 'shadow-brand/5');
+                }
+            });
+        });
+
+        // Initialize animations
+        document.addEventListener('DOMContentLoaded', function () {
+            // Animate boutique info on scroll
+            if (typeof gsap !== 'undefined') {
+                gsap.from(".group[class*='p-8']", {
+                    scrollTrigger: {
+                        trigger: ".lg\\:col-span-12",
+                        start: "top 80%"
+                    },
+                    y: 30,
+                    opacity: 0,
+                    duration: 0.8,
+                    stagger: 0.2,
+                    ease: "power3.out"
+                });
+
+                // Animate form
+                gsap.from(".lg\\:col-span-7", {
+                    scrollTrigger: {
+                        trigger: ".lg\\:col-span-7",
+                        start: "top 80%"
+                    },
+                    x: 30,
+                    opacity: 0,
+                    duration: 1,
+                    ease: "power3.out"
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>

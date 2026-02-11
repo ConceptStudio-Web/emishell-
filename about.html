@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Story | EMISHELL - Timeless Elegance</title>
+    <meta name="description"
+        content="Learn about the journey of Emishell Boutique, our commitment to quality, and our mission to provide affordable luxury fashion.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: '#fd01a4',
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-white">
+    <!-- Marquee Banner -->
+    <div class="marquee-banner">
+        <div class="marquee-content">
+            <span>Limited Time Offer</span>
+            <span>Free Shipping on Orders Over $50</span>
+            <span>New Arrivals Daily</span>
+            <span>Limited Time Offer</span>
+            <span>Free Shipping on Orders Over $50</span>
+            <span>New Arrivals Daily</span>
+            <span>Limited Time Offer</span>
+            <span>Free Shipping on Orders Over $50</span>
+            <span>New Arrivals Daily</span>
+            <span>Limited Time Offer</span>
+            <span>Free Shipping on Orders Over $50</span>
+            <span>New Arrivals Daily</span>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header
+        class="fixed top-[42px] w-full z-50 transition-all duration-500 bg-white/95 backdrop-blur-md py-4 shadow-sm">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <a href="index.html" class="group">
+                <img src="Emishell logo.png" alt="EMISHELL"
+                    class="h-12 w-auto group-hover:scale-105 transition-transform duration-300">
+            </a>
+
+            <nav class="hidden lg:flex items-center gap-8">
+                <a href="index.html"
+                    class="text-xs font-bold tracking-[0.15em] uppercase transition-all relative group text-slate-600 hover:text-brand">
+                    Home
+                    <span
+                        class="absolute -bottom-1 left-0 h-[2px] bg-brand w-0 group-hover:w-full transition-all duration-300"></span>
+                </a>
+                <a href="shop.html"
+                    class="text-xs font-bold tracking-[0.15em] uppercase transition-all relative group text-slate-600 hover:text-brand">
+                    Shop
+                    <span
+                        class="absolute -bottom-1 left-0 h-[2px] bg-brand w-0 group-hover:w-full transition-all duration-300"></span>
+                </a>
+                <a href="women.html"
+                    class="text-xs font-bold tracking-[0.15em] uppercase transition-all relative group text-slate-600 hover:text-brand">
+                    Women
+                    <span
+                        class="absolute -bottom-1 left-0 h-[2px] bg-brand w-0 group-hover:w-full transition-all duration-300"></span>
+                </a>
+                <a href="men.html"
+                    class="text-xs font-bold tracking-[0.15em] uppercase transition-all relative group text-slate-600 hover:text-brand">
+                    Men
+                    <span
+                        class="absolute -bottom-1 left-0 h-[2px] bg-brand w-0 group-hover:w-full transition-all duration-300"></span>
+                </a>
+                <a href="kids.html"
+                    class="text-xs font-bold tracking-[0.15em] uppercase transition-all relative group text-slate-600 hover:text-brand">
+                    Kids
+                    <span
+                        class="absolute -bottom-1 left-0 h-[2px] bg-brand w-0 group-hover:w-full transition-all duration-300"></span>
+                </a>
+                <a href="about.html"
+                    class="text-xs font-bold tracking-[0.15em] uppercase transition-all relative group text-brand">
+                    About
+                    <span class="absolute -bottom-1 left-0 h-[2px] bg-brand w-full"></span>
+                </a>
+                <a href="accessories.html"
+                    class="text-xs font-bold tracking-[0.15em] uppercase transition-all relative group text-slate-600 hover:text-brand">
+                    Accessories
+                    <span
+                        class="absolute -bottom-1 left-0 h-[2px] bg-brand w-0 group-hover:w-full transition-all duration-300"></span>
+                </a>
+                <a href="contact.html"
+                    class="text-xs font-bold tracking-[0.15em] uppercase transition-all relative group text-slate-600 hover:text-brand">
+                    Contact
+                    <span
+                        class="absolute -bottom-1 left-0 h-[2px] bg-brand w-0 group-hover:w-full transition-all duration-300"></span>
+                </a>
+            </nav>
+
+            <div class="flex items-center gap-5">
+                <!-- Search -->
+                <button class="text-slate-600 hover:text-brand transition-colors p-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8" />
+                        <path d="m21 21-4.3-4.3" />
+                    </svg>
+                </button>
+                <!-- Wishlist -->
+                <a href="wishlist.html" class="text-slate-600 hover:text-brand transition-colors relative">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path
+                            d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
+                    </svg>
+                    <span
+                        class="wishlist-count absolute -top-2 -right-2 bg-brand text-white text-[10px] w-4 h-4 rounded-full flex items-center justify-center font-bold"
+                        style="display: none;">0</span>
+                </a>
+                <!-- Cart -->
+                <button class="open-cart text-slate-600 hover:text-brand transition-colors relative">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z" />
+                        <path d="M3 6h18" />
+                        <path d="M16 10a4 4 0 0 1-8 0" />
+                    </svg>
+                    <span
+                        class="cart-count absolute -top-2 -right-2 bg-brand text-white text-[10px] w-4 h-4 rounded-full flex items-center justify-center font-bold"
+                        style="display: none;">0</span>
+                </button>
+                <!-- Mobile Menu -->
+                <button id="open-mobile-menu" class="lg:hidden text-slate-900 p-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="4" x2="20" y1="12" y2="12" />
+                        <line x1="4" x2="20" y1="6" y2="6" />
+                        <line x1="4" x2="20" y1="18" y2="18" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu Drawer -->
+    <div id="mobile-menu-overlay"
+        class="fixed inset-0 z-[100] hidden bg-slate-900/40 backdrop-blur-sm opacity-0 transition-opacity duration-300">
+        <div id="mobile-menu-drawer"
+            class="absolute right-0 top-0 h-full w-4/5 max-w-sm bg-white shadow-2xl translate-x-full transition-transform duration-500 flex flex-col">
+            <div class="p-8 flex justify-between items-center border-b border-slate-100">
+                <img src="Emishell logo.png" alt="EMISHELL" class="h-10 w-auto">
+                <button id="close-mobile-menu" class="p-2 hover:bg-slate-50 rounded-full transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M18 6 6 18" />
+                        <path d="m6 6 12 12" />
+                    </svg>
+                </button>
+            </div>
+            <nav class="flex-1 p-8 space-y-5">
+                <a href="index.html"
+                    class="block text-xl font-bold text-slate-900 hover:text-brand transition-colors">Home</a>
+                <a href="shop.html"
+                    class="block text-xl font-bold text-slate-900 hover:text-brand transition-colors">Shop</a>
+                <a href="women.html"
+                    class="block text-xl font-bold text-slate-900 hover:text-brand transition-colors">Women</a>
+                <a href="men.html"
+                    class="block text-xl font-bold text-slate-900 hover:text-brand transition-colors">Men</a>
+                <a href="kids.html"
+                    class="block text-xl font-bold text-slate-900 hover:text-brand transition-colors">Kids</a>
+                <a href="about.html" class="block text-xl font-bold text-brand transition-colors">About</a>
+                <a href="accessories.html"
+                    class="block text-xl font-bold text-slate-900 hover:text-brand transition-colors">Accessories</a>
+                <a href="contact.html"
+                    class="block text-xl font-bold text-slate-900 hover:text-brand transition-colors">Contact</a>
+                <a href="wishlist.html"
+                    class="block text-xl font-bold text-slate-900 hover:text-brand transition-colors">Wishlist</a>
+            </nav>
+            <div class="p-8 border-t border-slate-100 space-y-4">
+                <p class="text-xs font-bold text-slate-400 uppercase tracking-widest">Connect with us</p>
+                <div class="flex gap-4">
+                    <a href="#"
+                        class="w-10 h-10 bg-slate-100 rounded-full flex items-center justify-center text-slate-500 hover:bg-brand hover:text-white transition-all">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                            <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+                        </svg>
+                    </a>
+                    <a href="#"
+                        class="w-10 h-10 bg-slate-100 rounded-full flex items-center justify-center text-slate-500 hover:bg-brand hover:text-white transition-all">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cart Drawer -->
+    <div id="cart-overlay"
+        class="fixed inset-0 z-[100] hidden bg-slate-900/40 backdrop-blur-sm opacity-0 transition-opacity duration-300">
+        <div id="cart-drawer"
+            class="absolute right-0 top-0 h-full w-full max-w-md bg-white shadow-2xl translate-x-full transition-transform duration-500 flex flex-col">
+            <div class="p-8 flex justify-between items-center border-b border-slate-100">
+                <h2 class="text-2xl font-serif font-bold text-slate-900">Shopping Bag</h2>
+                <button id="close-cart" class="p-2 hover:bg-slate-50 rounded-full transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M18 6 6 18" />
+                        <path d="m6 6 12 12" />
+                    </svg>
+                </button>
+            </div>
+            <div id="cart-items" class="flex-1 overflow-y-auto p-8 space-y-8">
+                <!-- Cart items injected here -->
+            </div>
+            <div class="cart-footer p-8 bg-slate-50/50 border-t border-slate-100 space-y-6">
+                <div class="flex justify-between items-end">
+                    <span class="text-slate-500 font-medium">Subtotal</span>
+                    <div class="text-right">
+                        <span id="cart-total" class="text-2xl font-black text-slate-900">$0.00</span>
+                        <p class="text-[10px] text-slate-400 font-bold uppercase tracking-widest mt-1">Shipping
+                            calculated at checkout</p>
+                    </div>
+                </div>
+                <button
+                    class="w-full py-4 bg-slate-900 text-white font-bold rounded-full hover:bg-brand transition-all shadow-lg flex items-center justify-center gap-3 group">
+                    Proceed to Checkout
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="group-hover:translate-x-1 transition-transform">
+                        <path d="M5 12h14" />
+                        <path d="m12 5 7 7-7 7" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <main class="page-fade">
+        <section class="relative pt-60 pb-32 overflow-hidden">
+            <div class="container mx-auto px-6">
+                <div class="max-w-4xl mx-auto text-center space-y-12">
+                    <h1 class="text-7xl md:text-9xl font-serif text-slate-900 leading-[0.9]">
+                        Crafting <br> <span class="italic text-blue-300">Modern Legends</span>
+                    </h1>
+                    <p class="text-2xl text-slate-500 font-medium leading-relaxed">
+                        At Emishell, we believe that fashion is more than just clothing; it's a narrative of
+                        self-expression, a commitment to quality, and a tribute to the artisans who bring sketches to
+                        life.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-32 bg-slate-50">
+            <div class="container mx-auto px-6">
+                <div class="grid md:grid-cols-2 gap-20 items-center">
+                    <div class="reveal">
+                        <img src="Gallery/WhatsApp Image 2026-02-11 at 11.36.48.jpeg"
+                            class="rounded-[4rem] shadow-2xl w-full h-[600px] object-cover" alt="Our Philosophy">
+                    </div>
+                    <div class="space-y-10 reveal">
+                        <h4 class="text-sm font-black text-blue-400 uppercase tracking-[0.3em]">Our Philosophy</h4>
+                        <h2 class="text-5xl font-serif text-slate-900 leading-tight">Designing for <br> <span
+                                class="italic">The Modern Muse</span></h2>
+                        <p class="text-lg text-slate-600 leading-relaxed">
+                            We believe that style is an evolution of character. At Emishell, our philosophy is rooted in
+                            the balance between trend and tradition. We don't just follow seasons; we create pieces that
+                            transition through the years, becoming part of your personal legacy.
+                        </p>
+                        <ul class="space-y-4 text-slate-600">
+                            <li class="flex items-center gap-4">
+                                <span class="w-2 h-2 rounded-full bg-brand"></span>
+                                <span class="font-medium">Timeless Aesthetic</span>
+                            </li>
+                            <li class="flex items-center gap-4">
+                                <span class="w-2 h-2 rounded-full bg-blue-300"></span>
+                                <span class="font-medium">Uncompromising Quality</span>
+                            </li>
+                            <li class="flex items-center gap-4">
+                                <span class="w-2 h-2 rounded-full bg-brand"></span>
+                                <span class="font-medium">Intentional Design</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-32 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="grid md:grid-cols-2 gap-20 items-center">
+                    <div class="space-y-10 reveal order-2 md:order-1">
+                        <h4 class="text-sm font-black text-brand uppercase tracking-[0.3em]">The Artisan Way</h4>
+                        <h2 class="text-5xl font-serif text-slate-900 leading-tight">Craftsmanship <br> Above All</h2>
+                        <p class="text-lg text-slate-600 leading-relaxed">
+                            Every stitch tells a story of precision. Our artisans combine heritage techniques with
+                            modern innovation to ensure every garment feels like a second skin. From the initial sketch
+                            to the final polish, excellence is our only standard.
+                        </p>
+                        <div class="flex gap-8">
+                            <div class="text-center">
+                                <h4 class="text-3xl font-serif font-bold text-slate-900">48+</h4>
+                                <p class="text-[10px] font-bold uppercase tracking-widest text-slate-400">Hours per
+                                    piece</p>
+                            </div>
+                            <div class="text-center">
+                                <h4 class="text-3xl font-serif font-bold text-slate-900">12</h4>
+                                <p class="text-[10px] font-bold uppercase tracking-widest text-slate-400">Quality
+                                    checkpoints</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reveal order-1 md:order-2">
+                        <img src="Gallery/WhatsApp Image 2026-02-11 at 11.37.40 (1).jpeg"
+                            class="rounded-[4rem] shadow-2xl w-full h-[600px] object-cover" alt="Artisan Craft">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-32 bg-slate-900 text-white rounded-[4rem] mx-6 mb-32 relative overflow-hidden">
+            <div
+                class="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-white/5 to-transparent pointer-events-none">
+            </div>
+            <div class="container mx-auto px-12 relative z-10">
+                <div class="grid md:grid-cols-2 gap-20 items-center">
+                    <div class="reveal">
+                        <img src="Gallery/WhatsApp Image 2026-02-11 at 11.37.41 (1).jpeg"
+                            class="rounded-[3rem] shadow-2xl border border-white/10" alt="Our Roots">
+                    </div>
+                    <div class="space-y-10 reveal">
+                        <h4 class="text-sm font-black text-pink-300 uppercase tracking-[0.3em]">Our Roots</h4>
+                        <h2 class="text-5xl font-serif leading-tight">Ethical <br> Foundations</h2>
+                        <p class="text-slate-400 text-lg leading-relaxed">
+                            Founded with a vision for a cleaner fashion future, Emishell Boutique ensures that every
+                            partner in our supply chain shares our commitment to fair wages and environmental
+                            stewardship.
+                        </p>
+                        <div class="grid grid-cols-2 gap-8">
+                            <div>
+                                <h4 class="text-4xl font-serif font-bold text-brand mb-2">100%</h4>
+                                <p class="text-[10px] font-bold uppercase tracking-widest text-slate-500">Traceable
+                                    Materials</p>
+                            </div>
+                            <div>
+                                <h4 class="text-4xl font-serif font-bold text-blue-300 mb-2">Carbon</h4>
+                                <p class="text-[10px] font-bold uppercase tracking-widest text-slate-500">Offset
+                                    Shipping</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-white pt-24 pb-12 overflow-hidden relative">
+        <div
+            class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-pink-300 via-rose-500 to-blue-300 opacity-50">
+        </div>
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="grid md:grid-cols-5 gap-16 mb-20 text-left">
+                <div class="col-span-1 space-y-8">
+                    <div>
+                        <img src="Emishell logo.png" alt="EMISHELL" class="h-16 w-auto mb-6">
+                    </div>
+                    <p class="text-slate-400 text-sm leading-relaxed max-w-xs font-medium">
+                        Curating timeless style and effortless elegance for the modern muse.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-brand transition-all text-white group"
+                            target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                            </svg>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-brand transition-all text-white"
+                            target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+                            </svg>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-brand transition-all text-white"
+                            target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path
+                                    d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-bold text-[10px] uppercase tracking-[0.3em] mb-8 text-slate-500">Shop</h4>
+                    <ul class="space-y-4 text-sm font-medium">
+                        <li><a href="women.html" class="text-slate-400 hover:text-pink-300 transition-colors">Women</a>
+                        </li>
+                        <li><a href="men.html" class="text-slate-400 hover:text-pink-300 transition-colors">Men</a></li>
+                        <li><a href="kids.html" class="text-slate-400 hover:text-pink-300 transition-colors">Kids</a>
+                        </li>
+                        <li><a href="accessories.html"
+                                class="text-slate-400 hover:text-pink-300 transition-colors">Accessories</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-[10px] uppercase tracking-[0.3em] mb-8 text-slate-500">Company</h4>
+                    <ul class="space-y-4 text-sm font-medium">
+                        <li><a href="about.html" class="text-slate-400 hover:text-blue-300 transition-colors">About
+                                Us</a></li>
+                        <li><a href="contact.html"
+                                class="text-slate-400 hover:text-blue-300 transition-colors">Contact</a></li>
+                        <li><a href="#" class="text-slate-400 hover:text-blue-300 transition-colors">Privacy Policy</a>
+                        </li>
+                        <li><a href="#" class="text-slate-400 hover:text-blue-300 transition-colors">Terms of
+                                Service</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-[10px] uppercase tracking-[0.3em] mb-8 text-slate-500">Need Help?</h4>
+                    <ul class="space-y-4">
+                        <li class="text-slate-400 text-sm">Call/WhatsApp:</li>
+                        <li><a href="https://wa.me/263772857034" target="_blank"
+                                class="text-lg font-bold text-brand">+263 77 285 7034</a></li>
+                        <li class="text-slate-400 text-sm mt-4">Email:</li>
+                        <li><a href="mailto:sales@emishell.co.zw"
+                                class="text-sm font-bold hover:text-brand transition-colors">sales@emishell.co.zw</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="glass-dark p-8 rounded-[2rem]">
+                    <h4 class="font-bold text-[10px] uppercase tracking-[0.3em] mb-6 text-slate-300">Newsletter</h4>
+                    <p class="text-slate-400 text-xs mb-6">Subscribe for exclusive updates.</p>
+                    <div class="relative">
+                        <input type="email" placeholder="Email"
+                            class="w-full bg-white/5 border border-white/10 rounded-2xl px-5 py-4 text-sm focus:outline-none focus:border-pink-300/50">
+                        <button
+                            class="absolute right-2 top-2 bottom-2 bg-pink-300 text-slate-900 px-4 rounded-xl hover:bg-white transition-all">→</button>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-white/5 pt-8 text-center">
+                <p class="text-[10px] font-bold uppercase tracking-[0.2em] text-slate-500">© 2024 EMISHELL BOUTIQUE. ALL
+                    RIGHTS RESERVED.</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="data/products_data.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

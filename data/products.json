@@ -1,0 +1,219 @@
+[
+    {
+        "id": "acc-1",
+        "name": "Luxury Satchel Bag",
+        "category": "Accessories",
+        "subcategory": "Satchels",
+        "image": "Products/Accesories/Satchels/WhatsApp Image 2026-02-11 at 11.30.54.jpeg",
+        "description": "Premium leather satchel for the modern professional.",
+        "featured": true
+    },
+    {
+        "id": "acc-2",
+        "name": "Travel Suitcase Set",
+        "category": "Accessories",
+        "subcategory": "Suit Cases",
+        "image": "Products/Accesories/Suit Cases/WhatsApp Image 2026-02-11 at 11.32.40 (1).jpeg",
+        "description": "Durable and stylish suitcase set for long journeys.",
+        "featured": false
+    },
+    {
+        "id": "acc-3",
+        "name": "Silk Bed Sheets",
+        "category": "Accessories",
+        "subcategory": "Bed Sheets",
+        "image": "Products/Accesories/Bed Sheets/WhatsApp Image 2026-02-11 at 11.34.28.jpeg",
+        "description": "Ultra-soft silk sheets for a restful sleep.",
+        "featured": false
+    },
+    {
+        "id": "acc-4",
+        "name": "Winter Blanket",
+        "category": "Accessories",
+        "subcategory": "Blankets",
+        "image": "Products/Accesories/Blankets/WhatsApp Image 2026-02-11 at 11.36.43.jpeg",
+        "description": "Thick, warm blanket for cold winter nights.",
+        "featured": true
+    },
+    {
+        "id": "men-1",
+        "name": "Casual Men's Shirt",
+        "category": "Men",
+        "subcategory": "Shirts",
+        "image": "Products/Men/Men's Shirts/WhatsApp Image 2026-02-11 at 11.34.41 (1).jpeg",
+        "description": "Breathable cotton shirt for everyday wear.",
+        "featured": true,
+        "best_seller": true
+    },
+    {
+        "id": "men-2",
+        "name": "Classic Blue Jeans",
+        "category": "Men",
+        "subcategory": "Jeans",
+        "image": "Products/Men/Men's Jeans/WhatsApp Image 2026-02-11 at 11.35.38 (1).jpeg",
+        "description": "Timeless denim jeans with a perfect fit.",
+        "featured": false,
+        "flash_sale": true
+    },
+    {
+        "id": "men-3",
+        "name": "Men's Denim Shorts",
+        "category": "Men",
+        "subcategory": "Jean Shorts",
+        "image": "Products/Men/Men's Jean Shorts/WhatsApp Image 2026-02-11 at 11.35.31 (1).jpeg",
+        "description": "Cool and comfortable denim shorts for summer.",
+        "featured": false
+    },
+    {
+        "id": "men-4",
+        "name": "Men's Leather Jacket",
+        "category": "Men",
+        "subcategory": "Leather Jackets",
+        "image": "Products/Men/Men's Leather Jackets/WhatsApp Image 2026-02-11 at 11.35.36.jpeg",
+        "description": "Sleek leather jacket for a bold look.",
+        "featured": true,
+        "hot_deal": true
+    },
+    {
+        "id": "men-5",
+        "name": "Executive Men's Outfit",
+        "category": "Men",
+        "subcategory": "Outfits",
+        "image": "Products/Men/Men's Outfits/WhatsApp Image 2026-02-11 at 11.37.37 (2).jpeg",
+        "description": "A complete formal outfit for business leaders.",
+        "featured": true
+    },
+    {
+        "id": "kids-1",
+        "name": "Adorable Kids Outfit",
+        "category": "Kids",
+        "subcategory": "Outfits",
+        "image": "Products/Kids' Outfits/WhatsApp Image 2026-02-11 at 11.37.36 (2).jpeg",
+        "description": "Comfortable and cute outfit for active kids.",
+        "featured": true,
+        "flash_sale": true
+    },
+    {
+        "id": "uni-1",
+        "name": "Urban Street Shoes",
+        "category": "Unisex",
+        "subcategory": "Shoes",
+        "image": "Products/Unisex/Shoes/WhatsApp Image 2026-02-11 at 11.32.42 (1).jpeg",
+        "description": "Modern sneakers designed for comfort and style.",
+        "featured": true,
+        "best_seller": true
+    },
+    {
+        "id": "uni-2",
+        "name": "Graphic Streetwear T-Shirt",
+        "category": "Unisex",
+        "subcategory": "Graphic T-Shirts",
+        "image": "Products/Unisex/Graphic T-Shirts/WhatsApp Image 2026-02-11 at 11.34.39 (1).jpeg",
+        "description": "Bold graphic t-shirt for self-expression.",
+        "featured": false,
+        "hot_deal": true
+    },
+    {
+        "id": "uni-3",
+        "name": "Unisex Winter Jacket",
+        "category": "Unisex",
+        "subcategory": "Jackets",
+        "image": "Products/Unisex/Jackets/WhatsApp Image 2026-02-11 at 11.35.33 (1).jpeg",
+        "description": "Warm and versatile jacket for all genders.",
+        "featured": true
+    },
+    {
+        "id": "uni-4",
+        "name": "Comfort cotton Socks",
+        "category": "Unisex",
+        "subcategory": "Socks",
+        "image": "Products/Unisex/Socks/WhatsApp Image 2026-02-11 at 11.35.41 (1).jpeg",
+        "description": "Breathable cotton socks for daily comfort.",
+        "featured": false
+    },
+    {
+        "id": "women-1",
+        "name": "Designer Handbag",
+        "category": "Women",
+        "subcategory": "Hand Bags",
+        "image": "Products/Women/Women's Hand Bags/WhatsApp Image 2026-02-11 at 11.30.43.jpeg",
+        "description": "Elegant handbag for any occasion.",
+        "featured": true,
+        "best_seller": true
+    },
+    {
+        "id": "women-2",
+        "name": "Slim Fit Boyfriend Jeans",
+        "category": "Women",
+        "subcategory": "Boyfriend Jeans",
+        "image": "Products/Women/Women's Boyfriend Jeans/WhatsApp Image 2026-02-11 at 11.30.52 (1).jpeg",
+        "description": "Relaxed yet stylish boyfriend jeans.",
+        "featured": false
+    },
+    {
+        "id": "women-3",
+        "name": "Cropped Denim Jacket",
+        "category": "Women",
+        "subcategory": "Cropped Jackets",
+        "image": "Products/Women/Women's Cropped Jackets/WhatsApp Image 2026-02-11 at 11.33.33 (1).jpeg",
+        "description": "Trendy cropped jacket for a layered look.",
+        "featured": true,
+        "flash_sale": true
+    },
+    {
+        "id": "women-4",
+        "name": "Elegant Summer Dress",
+        "category": "Women",
+        "subcategory": "Dresses",
+        "image": "Products/Women/Women's Dresses/WhatsApp Image 2026-02-11 at 11.31.35 (1).jpeg",
+        "description": "Flowy and floral dress for summer days.",
+        "featured": true,
+        "hot_deal": true
+    },
+    {
+        "id": "women-5",
+        "name": "Athletic Long Tights",
+        "category": "Women",
+        "subcategory": "Long Tights",
+        "image": "Products/Women/Women's Long Tights/WhatsApp Image 2026-02-11 at 11.31.43 (1).jpeg",
+        "description": "Performance tights for the active lifestyle.",
+        "featured": false
+    },
+    {
+        "id": "women-6",
+        "name": "NFL Graphic Crop Top",
+        "category": "Women",
+        "subcategory": "NFL Cropped T-shirts",
+        "image": "Products/Women/Women's NFL Cropped T-shirts/WhatsApp Image 2026-02-11 at 11.36.38 (1).jpeg",
+        "description": "Sporty crop top with NFL branding.",
+        "featured": false
+    },
+    {
+        "id": "women-7",
+        "name": "Chic Women's Outfit",
+        "category": "Women",
+        "subcategory": "Outfits",
+        "image": "Products/Women/Women's Outfits/WhatsApp Image 2026-02-11 at 11.32.35 (1).jpeg",
+        "description": "A curated outfit for a polished look.",
+        "featured": true,
+        "best_seller": true
+    },
+    {
+        "id": "women-8",
+        "name": "Floral Pleated Skirt",
+        "category": "Women",
+        "subcategory": "Skirts",
+        "image": "Products/Women/Women's Skirts/WhatsApp Image 2026-02-11 at 11.33.31 (1).jpeg",
+        "description": "Lightweight skirt with beautiful floral patterns.",
+        "featured": false
+    },
+    {
+        "id": "women-9",
+        "name": "Basic Cotton Tank Top",
+        "category": "Women",
+        "subcategory": "Tank Tops",
+        "image": "Products/Women/Women's Tank Tops/WhatsApp Image 2026-02-11 at 11.36.40.jpeg",
+        "description": "Essential tank top for layering.",
+        "featured": false
+    }
+]
