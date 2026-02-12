@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/public_html/
+    - export DEPLOYPATH=/home/emishell/public_html/
     - /bin/cp -rf * $DEPLOYPATH
